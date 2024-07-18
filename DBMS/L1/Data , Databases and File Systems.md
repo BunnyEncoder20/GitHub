@@ -39,7 +39,7 @@
 	- Data inconsistency
 	- Data security 
 
-## Database Management System (DBMS)
+## [[Database Management Systems]] (DBMS)
 
 - A Database Management System is software designed to manage, manipulate, and organize large volumes of data efficiently. 
 - It serves as an interface between the database and the users or applications, providing tools for storing, retrieving, updating, and managing data securely.

@@ -13,19 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBMS/Data , Databases and File Systems/Data Databases and File Systems.md",
+                "file": "DBMS/L1/Data , Databases and File Systems.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "fbae4cbb66364112",
+            "id": "c66195adf2e4429d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBMS/Types of DB/Relational Databases.md",
+                "file": "DBMS/L3/Database Management Systems.md",
                 "mode": "source",
                 "source": false
               }
@@ -51,7 +51,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DBMS/Types of DB/Relational Databases.md"
+                "file": "DBMS/L3/Database Management Systems.md"
               }
             }
           },
@@ -99,7 +99,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "DBMS/Types of DB/Relational Databases.md",
+                "file": "DBMS/L3/Database Management Systems.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DBMS/Types of DB/Relational Databases.md",
+                "file": "DBMS/L3/Database Management Systems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DBMS/Types of DB/Relational Databases.md",
+                "file": "DBMS/L3/Database Management Systems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +188,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 535.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -200,22 +200,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fbae4cbb66364112",
+  "active": "c66195adf2e4429d",
   "lastOpenFiles": [
-    "DBMS/Data , Databases and File Systems/Data Databases and File Systems.md",
-    "DBMS/Types of DB/Relational Databases.md",
-    "DBMS/Types of DB/Types of Databases.md",
-    "DBMS/Types of DB/In-Memory Database.md",
-    "DBMS/Types of DB",
-    "DBMS/Data , Databases and File Systems",
-    "DBMS/Types of DB/Object Oriented Database.md",
-    "DBMS/Types of DB/NoSQL Databases.md",
+    "DBMS/L1/Data , Databases and File Systems.md",
+    "DBMS/L3/Database Management Systems.md",
+    "DBMS/L2/Database Management Systems.md",
+    "DBMS/L1/Database Management System.md",
+    "DBMS/L2/Relational Databases.md",
+    "README.md",
+    "DBMS/Types of DB/Untitled 1",
+    "DBMS/L3",
+    "DBMS/L2/Types of Databases.md",
+    "DBMS/L2/In-Memory Database.md",
+    "DBMS/L2",
+    "DBMS/L1",
+    "DBMS/L2/Object Oriented Database.md",
+    "DBMS/L2/NoSQL Databases.md",
     "Assets/database-file-system-image2-hLfmBmXr.png",
     "Assets/database-file-system-image1-9YrQuPEn.png",
     "Untitled.canvas",
     "Untitled.md",
     "DBMS/Data_Database_File Systems.md",
-    "README.md",
     "Assets"
   ]
 }
