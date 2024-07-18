@@ -1,0 +1,2 @@
+- These DBs, the data is kept in the primary memory (RAM) rather than on the disk for faster data retrievals
+- Implemented in applications requiring instant data processing and top notch performance
