@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "0c3b2fa1e6bec1e6",
+        "id": "e5102f5b911d468c",
         "type": "tabs",
         "children": [
           {
-            "id": "e56eec95cf0fc115",
+            "id": "83338db4ed10410b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "DBMS/07 SQL/SQL.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -33,7 +37,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "DBMS/07 SQL/SQL.md"
+              }
             }
           },
           {
@@ -91,6 +97,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "DBMS/07 SQL/SQL.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +120,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.6316046762907512,
+                  "scale": 0.6316046762907496,
                   "close": true
                 }
               }
@@ -125,6 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "DBMS/07 SQL/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,6 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "DBMS/07 SQL/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,6 +164,14 @@
                 "sortOrder": "frequency",
                 "useHierarchy": false
               }
+            }
+          },
+          {
+            "id": "96f083e29799911d",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {}
             }
           }
         ]
@@ -189,23 +206,34 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e56eec95cf0fc115",
+  "active": "83338db4ed10410b",
   "lastOpenFiles": [
+    "DBMS/05 Data Models and It's Types/Data Models.md",
     "DBMS/07 SQL/SQL.md",
-    "DBMS/01 Types of DBs/Relational Databases.md",
-    "DBMS/06 RDBMS/Keys in DBMS.md",
     "DBMS/07 SQL",
-    "DBMS/06 RDBMS/RDMS Introduction.md",
-    "DBMS/06 RDBMS/Essential Components of Tables.md",
     "DBMS/06 RDBMS/Super Key.md",
-    "DBMS/06 RDBMS/Foreign Key.md",
-    "Assets/Pasted image 20240719114131.png",
-    "DBMS/06 RDBMS/Candidate Key.md",
-    "Assets/Pasted image 20240719114033.png",
+    "DBMS/06 RDBMS/RDMS Introduction.md",
     "DBMS/06 RDBMS/Primary Key.md",
-    "Assets/Pasted image 20240719113851.png",
+    "DBMS/06 RDBMS/Keys in DBMS.md",
     "DBMS/06 RDBMS/Intension and Extension of Databases.md",
+    "DBMS/06 RDBMS/Foreign Key.md",
+    "DBMS/06 RDBMS/Essential Components of Tables.md",
+    "DBMS/06 RDBMS/Candidate Key.md",
     "DBMS/06 RDBMS",
+    "Assets/Pasted image 20240719114131.png",
+    "Assets/Pasted image 20240719114033.png",
+    "Assets/Pasted image 20240719113851.png",
+    "DBMS/05 Data Models and It's Types/Relational Data Model.md",
+    "DBMS/05 Data Models and It's Types/Object-Oriented Data Model.md",
+    "DBMS/05 Data Models and It's Types/NoSQL Data Models.md",
+    "DBMS/05 Data Models and It's Types/Network Data Model.md",
+    "DBMS/05 Data Models and It's Types/Hierarchical Data Model.md",
+    "DBMS/05 Data Models and It's Types/Entity-Relationship Model.md",
+    "DBMS/05 Data Models and It's Types",
+    "Assets/Pasted image 20240719072656.png",
+    "Assets/Pasted image 20240719072207.png",
+    "Assets/Pasted image 20240719072111.png",
+    "Assets/Pasted image 20240719071659.png",
     "Excalidraw/levels_of_data_abstraction.excalidraw.md",
     "DBMS/04 DBMS Architectures/1-Tier Architecture.md",
     "DBMS/04 DBMS Architectures/2-Tier Architecture.md",
@@ -217,23 +245,14 @@
     "DBMS/04 DBMS Architectures/00 Pre-requisites for DBMS Architectures.md",
     "DBMS/04 DBMS Architectures/Database Schema.md",
     "DBMS/04 DBMS Architectures/Logical Schema.md",
-    "Excalidraw/logical_schema_tree.md",
     "Excalidraw/TimeLine 3 months.excalidraw",
-    "DBMS/03 Abstraction/Data Abstraction.md",
-    "DBMS/02 DB Management Systems/Database Management Systems.md",
     "DBMS/04 DBMS Architectures",
     "Excalidraw",
-    "2024-07-29.md",
     "DBMS/03 Abstraction",
-    "DBMS/L3/Untitled.md",
-    "DBMS/00 Basics/Data , Databases and File Systems.md",
-    "DBMS/L2/Database Management Systems.md",
     "DBMS/Types of DB/Untitled 1",
     "DBMS/02 DB Management Systems",
     "DBMS/01 Types of DBs",
-    "DBMS/00 Basics",
     "Assets/database-file-system-image2-hLfmBmXr.png",
-    "Assets/database-file-system-image1-9YrQuPEn.png",
     "Untitled.canvas"
   ]
 }

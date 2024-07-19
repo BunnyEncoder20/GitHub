@@ -7,6 +7,15 @@
 - Any RDBMS will use SQL as the baseline through which it will access the data 
 
 - Necessary to follow along in **MySQL workbench** (or just use one of the online ones)
+- Cause I've server geek, I'll follow along in my terminal through MySQL shell using the command : 
+```cmd
+mysql -u root -p
+```
+- After this enter the password when prompted.
+- You can see the list of the databases by using the command : 
+```SQL
+show databases;
+```
 
 ----
 
@@ -121,14 +130,27 @@ CREATE TABLE albums(
 
 ### CRUD Ops on Tables 
 
-1. **Inserting** into the Table 
+
+#### Insert
+
+- **Inserting** into the Table :
 ```SQL
 INSERT INTO bands (name) 
 VALUES ('One Direction'),('Napalm Death'),('BlackPink');
 ```
 - Notice that we are using the Table name followed by the column names which we want to insert data into.
+- We can insert multiple columns and record in the same command as follows : 
+```SQL
+insert into albums(name, release_year, band_id) 
+values ('Up All Night',2011,1),('Square One',2016,3),('Scum',1987,2);
+```
+- **NOTE** that the values are all separate tuples. 
 
-2. **Reading** the records in the Table
+---
+
+#### Reading
+
+- **Reading** the records in the Table
 ```SQL
 SELECT * TABLE bands;
 ```
@@ -212,3 +234,134 @@ ORDER BY name DESC;
 | 2   | Led Zeppelin |
 | 4   | Black Pink   |
 
+- To get only distinct queries inside of our select statement, we can use the **DISTINCT** keyword: 
+```SQL
+SELECT DISTINCT name FROM albums ;
+```
+
+---
+
+#### Update
+
+-  **Updating a Table** we use the **UPDATE** and **SET** command as follows
+```SQL
+UPDATE albums
+SET release_year = 1992;
+```
+- Be **careful** as the above mistake will update all the rows of the table *albums* to have the release year of 1992. 
+- When using update, we must always select the targeted row(s) using the keyword : **WHERE**
+```SQL
+UPDATE albums
+SET release_year = 1992
+WHERE id = 10;
+```
+
+> Note that **WHERE** is used at the end of multiple different statements to refine the data records which are fetched for the operations.
+> Another popular application of it to filter out the records when we are using the **SELECT** command
+
+
+---
+
+#### Filtering Techniques
+
+- Using **WHERE** command to narrow down searches:
+```SQL
+select *  from albums
+where release_year > 2010;
+```
+- The above command will only fetch the records of those *release_year*  which are greater than 2010
+
+- Using the **LIKE** keyword to compare data with strings.
+	- `%`  represents any string with any characters and of any length. It could be anything.
+	- So when we give something like : 
+```SQL
+SELECT * FROM albums
+WHERE name LIKE '%ni%' ;
+```
+- what we mean to say is that we want all the names which have the string "ni" in them and they can have anything before or after that sub string.
+
+| id  | name              | release_year | band_id |
+| --- | ----------------- | ------------ | ------- |
+| 1   | Up All Night      | 2011         | 1       |
+| 4   | Midnight Memories | 2013         | 1       |
+
+- We can also use **Logical operators** in SQL such as **AND**, **OR**, **NOT**, etc.
+```SQL
+SELECT * FROM albums
+WHERE name LIKE '%ni%' OR band_id = 2;
+```
+
+| id  | name                        | release_year | band_id |
+| --- | --------------------------- | ------------ | ------- |
+| 1   | Up All Night                | 2011         | 1       |
+| 3   | Scum                        | 1987         | 2       |
+| 4   | Midnight Memories           | 2013         | 1       |
+| 9   | Harmony Coruption           | 1990         | 2       |
+| 10  | Fear, Emptiness and Despair | 1992         | 2       |
+```SQL
+SELECT * FROM albums
+WHERE release_year < 2010 and band_id = 2;
+```
+
+| id  | name                        | release_year | band_id |
+| --- | --------------------------- | ------------ | ------- |
+| 3   | Scum                        | 1987         | 2       |
+| 9   | Harmony Coruption           | 1990         | 2       |
+| 10  | Fear, Emptiness and Despair | 1992         | 2       |
+
+- Another way the **WHERE** command can be used is when we want to filter using a certain range , example : between 2 different years.
+
+```SQL
+SELECT * FROM albums
+WHERE release_year BETWEEN 2010 AND 2015;
+```
+
+| id  | name              | release_year | band_id |
+| --- | ----------------- | ------------ | ------- |
+| 1   | Up All Night      | 2011         | 1       |
+| 4   | Midnight Memories | 2013         | 1       |
+| 5   | Take me Home      | 2012         | 1       |
+| 6   | Four              | 2014         | 1       |
+- As we can see all the *release_years* are between the  specified range 
+- We can also filter using key words like **IS NULL** or **IS NOT NULL**
+
+```SQL
+SELECT * FROM albums
+WHERE release_year IS NULL
+```
+
+
+---
+
+#### Delete 
+
+- *Deleting record* from a table is similar to the *select from* statement: 
+```SQL
+DELETE FROM albums ;
+```
+- This will delete all the rows from the database (when we do not specify which rows).
+- We specify the table and then which record using the **WHERE** command. 
+```SQL
+SELECT * FROM albums 
+WHERE id = 5 ;
+```
+
+---
+
+
+#### Join 
+
+- **JOIN** allows us to combine two different tables together on different properties 
+- **JOIN** allows us to explore the relations between the data tables, which is really the highlighting feature of RDBMS.
+- A basic **JOIN** statement could be : 
+```SQL
+SELECT * FROM bands
+JOIN albums ON bands.id = albums.band_id;
+```
+- The table which we *write first* is supposed to be the table on the *left.*  Here the left table is bands.
+- The **JOIN** command combines the tables albums and bands and displays those records only when the *id* of the *bands table*, matches the *band_id*  column of the *albums table*.
+
+- There 3 major types of joins : 
+	1. **Inner Join**
+	2. **Left Join** 
+	3. **Right Join**
