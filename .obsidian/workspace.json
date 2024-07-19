@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e5102f5b911d468c",
+        "id": "0c3b2fa1e6bec1e6",
         "type": "tabs",
         "children": [
           {
-            "id": "83338db4ed10410b",
+            "id": "e56eec95cf0fc115",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -113,7 +113,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.6316046762907496,
+                  "scale": 0.6316046762907512,
                   "close": true
                 }
               }
@@ -189,8 +189,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "83338db4ed10410b",
+  "active": "e56eec95cf0fc115",
   "lastOpenFiles": [
+    "DBMS/07 SQL/SQL.md",
+    "DBMS/01 Types of DBs/Relational Databases.md",
+    "DBMS/06 RDBMS/Keys in DBMS.md",
+    "DBMS/07 SQL",
+    "DBMS/06 RDBMS/RDMS Introduction.md",
+    "DBMS/06 RDBMS/Essential Components of Tables.md",
+    "DBMS/06 RDBMS/Super Key.md",
+    "DBMS/06 RDBMS/Foreign Key.md",
+    "Assets/Pasted image 20240719114131.png",
+    "DBMS/06 RDBMS/Candidate Key.md",
+    "Assets/Pasted image 20240719114033.png",
+    "DBMS/06 RDBMS/Primary Key.md",
+    "Assets/Pasted image 20240719113851.png",
+    "DBMS/06 RDBMS/Intension and Extension of Databases.md",
+    "DBMS/06 RDBMS",
     "Excalidraw/levels_of_data_abstraction.excalidraw.md",
     "DBMS/04 DBMS Architectures/1-Tier Architecture.md",
     "DBMS/04 DBMS Architectures/2-Tier Architecture.md",
@@ -213,22 +228,12 @@
     "DBMS/L3/Untitled.md",
     "DBMS/00 Basics/Data , Databases and File Systems.md",
     "DBMS/L2/Database Management Systems.md",
-    "DBMS/L1/Database Management System.md",
-    "DBMS/01 Types of DBs/Relational Databases.md",
-    "README.md",
     "DBMS/Types of DB/Untitled 1",
     "DBMS/02 DB Management Systems",
-    "DBMS/01 Types of DBs/Types of Databases.md",
-    "DBMS/01 Types of DBs/In-Memory Database.md",
     "DBMS/01 Types of DBs",
     "DBMS/00 Basics",
-    "DBMS/01 Types of DBs/Object Oriented Database.md",
-    "DBMS/01 Types of DBs/NoSQL Databases.md",
     "Assets/database-file-system-image2-hLfmBmXr.png",
     "Assets/database-file-system-image1-9YrQuPEn.png",
-    "Untitled.canvas",
-    "Untitled.md",
-    "DBMS/Data_Database_File Systems.md",
-    "Assets"
+    "Untitled.canvas"
   ]
 }
