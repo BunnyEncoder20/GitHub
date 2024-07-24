@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBMS/07 SQL/SQL.md",
+                "file": "Most Important Interview Core Questions.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DBMS/07 SQL/SQL.md"
+                "file": "Most Important Interview Core Questions.md"
               }
             }
           },
@@ -97,7 +97,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "DBMS/07 SQL/SQL.md",
+                "file": "Most Important Interview Core Questions.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DBMS/07 SQL/SQL.md",
+                "file": "Most Important Interview Core Questions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DBMS/07 SQL/SQL.md",
+                "file": "Most Important Interview Core Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,8 +208,20 @@
   },
   "active": "83338db4ed10410b",
   "lastOpenFiles": [
-    "DBMS/05 Data Models and It's Types/Data Models.md",
+    "DBMS/07 SQL/Most Important Interview Core Questions.md",
+    "Most Important Interview Core Questions.md",
     "DBMS/07 SQL/SQL.md",
+    "Assets/Pasted image 20240722130919.png",
+    "Assets/Pasted image 20240722125706.png",
+    "Assets/Pasted image 20240722124343.png",
+    "Assets/Pasted image 20240722124047.png",
+    "Assets/Pasted image 20240722112726.png",
+    "Assets/Pasted image 20240722112336.png",
+    "Assets/Pasted image 20240722112239.png",
+    "Assets/Pasted image 20240722111800.png",
+    "Assets/Pasted image 20240722111628.png",
+    "Assets/Pasted image 20240722111620.png",
+    "DBMS/05 Data Models and It's Types/Data Models.md",
     "DBMS/07 SQL",
     "DBMS/06 RDBMS/Super Key.md",
     "DBMS/06 RDBMS/RDMS Introduction.md",
@@ -220,9 +232,6 @@
     "DBMS/06 RDBMS/Essential Components of Tables.md",
     "DBMS/06 RDBMS/Candidate Key.md",
     "DBMS/06 RDBMS",
-    "Assets/Pasted image 20240719114131.png",
-    "Assets/Pasted image 20240719114033.png",
-    "Assets/Pasted image 20240719113851.png",
     "DBMS/05 Data Models and It's Types/Relational Data Model.md",
     "DBMS/05 Data Models and It's Types/Object-Oriented Data Model.md",
     "DBMS/05 Data Models and It's Types/NoSQL Data Models.md",
@@ -230,21 +239,14 @@
     "DBMS/05 Data Models and It's Types/Hierarchical Data Model.md",
     "DBMS/05 Data Models and It's Types/Entity-Relationship Model.md",
     "DBMS/05 Data Models and It's Types",
-    "Assets/Pasted image 20240719072656.png",
-    "Assets/Pasted image 20240719072207.png",
-    "Assets/Pasted image 20240719072111.png",
-    "Assets/Pasted image 20240719071659.png",
     "Excalidraw/levels_of_data_abstraction.excalidraw.md",
     "DBMS/04 DBMS Architectures/1-Tier Architecture.md",
     "DBMS/04 DBMS Architectures/2-Tier Architecture.md",
     "DBMS/04 DBMS Architectures/Database Architectures.md",
     "DBMS/04 DBMS Architectures/3-Tier Architecture.md",
-    "Assets/33-3.png",
-    "Assets/DBMS-1-Tier-Architecture-660.webp",
     "DBMS/04 DBMS Architectures/Physical Schema.md",
     "DBMS/04 DBMS Architectures/00 Pre-requisites for DBMS Architectures.md",
     "DBMS/04 DBMS Architectures/Database Schema.md",
-    "DBMS/04 DBMS Architectures/Logical Schema.md",
     "Excalidraw/TimeLine 3 months.excalidraw",
     "DBMS/04 DBMS Architectures",
     "Excalidraw",
@@ -252,7 +254,6 @@
     "DBMS/Types of DB/Untitled 1",
     "DBMS/02 DB Management Systems",
     "DBMS/01 Types of DBs",
-    "Assets/database-file-system-image2-hLfmBmXr.png",
     "Untitled.canvas"
   ]
 }

@@ -11,6 +11,8 @@
 ```cmd
 mysql -u root -p
 ```
+- `-u` flag for the user and 
+- `-p` flag for the password (never type in the password into the command)
 - After this enter the password when prompted.
 - You can see the list of the databases by using the command : 
 ```SQL
@@ -78,7 +80,6 @@ CREATE TABLE test (
 ```
 - Remember that the entire CREATE TABLE is a block, hence the semi colon only comes after the it, and not on every line.
 - After the column name, we have specified the *Data type* of the column
-
 2. If we want to add another column to the already made table or change any other property of our table, we usually will use : **ALTER TABLE** command 
 ```SQL
 ALTER TABLE test 
@@ -86,6 +87,22 @@ ADD Col2 VARCHAR(255);
 ```
 - Notice that though the command is on 2 lines, but it is one single command (hence the ; is only on the second line).
 - **ADD** is also another key word 
+- We can also *rename, add and remove* columns using the **ALTER TABLE** command as follows :
+```SQL
+ALTER TABLE table_name 
+RENAME COLUMN old_column_name 
+TO new_column_name;
+```
+
+```SQL
+ALTER TABLE table_name 
+ADD COLUMN column_name data_type;
+```
+
+```SQL
+ALTER TABLE table_name 
+DROP COLUMN column_name;
+```
 
 3. If we no longer have use of the table, we can drop that table using the : **DROP TABLE** command
 ```SQL
@@ -195,11 +212,12 @@ SELECT * FROM bands LIMIT 2;
 | ------------ |
 | The Beatles  |
 | Led Zeppelin |
-- We can rename the Column names in the query so that they are more user friendly to read . This is done using the **AS** command
+- We can use alias for column names in the query so that they are more user friendly to read . This is done using the **AS** command
 ```SQL
 SELECT id AS 'ID' , name AS 'Band Name' 
 FROM bands;
 ```
+- Notice how the Strings with spaces are placed inside single quotes.
 
 | ID  | Band Name    |
 | --- | ------------ |
@@ -365,3 +383,176 @@ JOIN albums ON bands.id = albums.band_id;
 	1. **Inner Join**
 	2. **Left Join** 
 	3. **Right Join**
+
+##### Inner Join 
+
+- It is the default type of **JOIN**
+- In fact we do not even need to type **INNER JOIN** in the query, cause just typing **JOIN** is equivalent to **INNER JOIN**
+- Given be below are examples of **INNER JOIN** commands :
+	- Consider the following tables and we want to find out the active users (the ones which are doing some action)
+![[Pasted image 20240722102459.png]]
+![[Pasted image 20240722102509.png]]
+```SQL
+SELECT * 
+FROM customer
+JOIN event
+ON customer.customer_id = event.customer_id;
+```
+![[Pasted image 20240722105352.png]]
+- Note that **SELECT** * will select all the columns from both the tables but we can specify which columns we want as follows : 
+```SQL
+SELECT customer.customer_id, customer.name, event.action
+FROM customer 
+JOIN event 
+ON customer.customer_id = event.customer_id;
+```
+
+ - The Inner Join will only put the row data into the Join table when there is a match between the column values specified in the **ON** statement. (It looks like a intersection between the 2 tables)
+
+##### Left Join
+
+- Left join is when we want the all the data from the left table and the common data between the 2 tables 
+- It looks something like this: 
+  ![[Pasted image 20240722105936.png]]
+- Example: We want see what each user on the customer table is doing. 
+![[Pasted image 20240722105822.png]]
+- Hence the **LEFT JOIN** for this table would look something like this : 
+```SQL
+SELECT * 
+FROM customer
+LEFT JOIN event
+ON customer.customer_id = event.customer_id;
+```
+- Notice that all the rows in the first table are present regardless if they have a match or not in the second table. 
+- The columns of the second table are left blank or null for them.
+
+
+##### Right Join
+
+- **RIGHT JOIN** is like a **LEFT JOIN** but reversed.
+- It is not commonly used as any **RIGHT JOIN** can be easily written as a conventional **LEFT JOIN**.
+![[Pasted image 20240722110937.png]]
+- Consider the Following Tables : 
+![[Pasted image 20240722111012.png]]
+- If we want to make a **RIGHT JOIN** between the tables event_v2 and action, we ca do it in the following way : 
+```SQL
+SELECT *
+FROM event_v2
+RIGHT JOIN action
+ON event_v2.action_id = action.action_id;
+```
+![[Pasted image 20240722111203.png]]
+
+
+##### Outer / Full Join
+
+- This Join takes all the rows from both the tables regardless if there is a match or not.
+- Consider the following table : 
+![[Pasted image 20240722111620.png]]
+![[Pasted image 20240722111628.png]]
+- If we want to perform **FULL JOIN** on these , it would look something like this:
+```SQL
+SELECT * 
+FROM techer
+FULL OUTER JOIN student 
+ON teacher.age = student.age;
+```
+![[Pasted image 20240722111800.png]]
+- It basically does this by doing a **LEFT JOIN** and then a **RIGHT JOIN** on the tables.
+
+
+##### UNION
+
+- **UNION** doesn't make tables, just returns a single Column of combines data from different attributes of one or more tables .
+- Consider the same Teacher - Student tables from last example: 
+![[Pasted image 20240722111620.png]]
+![[Pasted image 20240722111628.png]]
+If we were to perform a **UNION** on the ages of the student and teachers, it would look something like this : 
+```SQL
+SELECT age FROM teacher
+UNION
+SELECT age FROM stuednt;
+```
+![[Pasted image 20240722112239.png]]
+- **Notice** that there are no duplicate records in the resultant column.
+- If we want *all* the values of the **UNION** we can use **UNION ALL**
+```SQL
+SELECT age FROM teacher
+UNION ALL
+SELECT age FROM stuednt;
+```
+![[Pasted image 20240722112336.png]]
+
+##### Cross Join
+
+- It doesn't check for any matches.
+- It just takes every row in the left table and attaches it to every row in the right table.
+- Consider the same tables from previous examples : 
+![[Pasted image 20240722111620.png]]
+![[Pasted image 20240722111628.png]]
+- A **CROSS JOIN** between the columns teacher names and student names would look something like : 
+```SQL
+SELECT teacher.name student.name
+FROM teacher 
+CROSS JOIN student;
+```
+![[Pasted image 20240722112726.png]]
+
+
+
+
+#### Aggregate Functions
+
+1. **AVG** : returns the **average** of that attribute from specified table:
+```SQL
+SELECT AVG(release_year) FROM albums;
+```
+![[Pasted image 20240722124047.png]]
+2. **SUM** : returns the sum total of the attribute 
+```SQL
+SELECT SUM(release_year) FROM albums;
+```
+![[Pasted image 20240722124343.png]]
+3. **COUNT** returns the number of instances of that attribute. It is usually used in a query with the **GROUP BY** keyword. 
+```SQL
+SELECT band_id, COUNT(band_id) FROM albums
+GROUP BY band_id;
+```
+![[Pasted image 20240722125706.png]]
+
+5. **GROUP BY** just groups the rows of same values into a single row.
+- But looking at the band id, doesn't give us much info, we need to combine this with the band table to get their actual names.
+- We can do that in the following manner which is just combing all the functions we have learned till now:
+```SQL
+SELECT b.name as Band_Name, COUNT(a.id) as No_of_Albums
+FROM bands as b
+LEFT JOIN albums as a
+ON b.id = a.band_id
+GROUP BY b.id;
+```
+![[Pasted image 20240722130919.png]]
+
+
+
+#### Aggregate Filtering 
+
+- Consider a situation where you have to filter the results of a query based on the aggregate function. 
+- We cannot simply put a  **WHERE** statement just before the **GROUP BY** statement as **GROUP BY** aggregation will happen always at the end.
+- For such situations, we have the **HAVING** keyword. We can use aggregate results in **HAVING** and can use it to filter the results of the **GROUP BY** aggregate: 
+```SQL
+SELECT b.name as Band_Name, COUNT(a.id) as No_of_Albums
+FROM bands as b
+LEFT JOIN albums as a
+ON b.id = a.band_id
+GROUP BY b.id
+HAVING No_of_Ablums > 1;
+```
+- The above query will get us all the Band names and the number of their albums and makes sure that those record include only those bands which are *having* the number of albums > 1.
+
+
+### SQL Exercise Questions
+
+All the Questions for these are [here](https://github.com/WebDevSimplified/Learn-SQL?tab=readme-ov-file).
+
+Q1. 
+
