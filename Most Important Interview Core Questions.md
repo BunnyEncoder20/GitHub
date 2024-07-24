@@ -58,7 +58,7 @@
 - [ ] What is JOIN .. Explain types of JOINs  Inner and Outer Join  
 - [ ] Diff between 2 tier and 3 tier architecture  
 - [ ] Diff between TRUNCATE and DELETE command ..  
-- [ ] Difference between Intension and Extension in a DataBase 
+- [ ] Difference between Intension and Extension in a Data Base 
 - [ ] Difference between share lock and exclusive lock, definition of lock
 
 ## Networking
@@ -108,3 +108,4 @@
 - [ ] [Python Interview Questions](https://www.interviewbit.com/python-interview-questions/#freshers)
 - [ ] [Djnago Interview Questions](https://www.geeksforgeeks.org/django-interview-questions/)
 - [ ] [Backend Interview Questions](https://www.fullstack.cafe/blog/backend-developer-interview-questions)
+- [ ] [TUF Most Asked Interview Questions](https://takeuforward.org/interviews/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet/)
