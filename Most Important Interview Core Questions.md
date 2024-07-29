@@ -32,34 +32,34 @@
 
 ## DBMS
 
-- [ ] What is DBMS ? Mention advantages..  
-- [ ] What is Database?  
-- [ ] What is a database system?  
-- [ ] What is RDBMS ? Properties..  
-- [ ] Types of database languages  
-- [ ] ACID properties **(VVVVV IMP)**  
-- [ ] Difference between vertical and horizontal scaling  
-- [ ] What is sharding  
-- [ ] Keys in DBMS  
-- [ ] Types of relationship  
-- [ ] Data abstraction in DBMS, three levels of it  
-- [ ] Indexing in DBMS  
-- [ ] What is DDL (Data Definition Language)  
-- [ ] What is DML (Data Manipulation Language) 
-- [ ] What is normalization ? Types of normalization. 
-- [ ] What is denormalization ?  
-- [ ] What is functional dependency ?  
-- [ ] E-R Model ?   
-- [ ] Conflict Serializability in DBMS ..  
-- [ ] What is CCP ? (Concurrency Control Protocols)  
-- [ ] Entity, Entity Type, Entity Set, Weak Entity Set..  
-- [ ] What are SQL commands ? Types of them..  
-- [ ] Nested Queries in SQL ?  
-- [ ] What is JOIN .. Explain types of JOINs  Inner and Outer Join  
-- [ ] Diff between 2 tier and 3 tier architecture  
-- [ ] Diff between TRUNCATE and DELETE command ..  
-- [ ] Difference between Intension and Extension in a Data Base 
-- [ ] Difference between share lock and exclusive lock, definition of lock
+- [x] What is DBMS ? Mention advantages..  
+- [x] What is Database?  
+- [x] What is a database system?  
+- [x] What is RDBMS ? Properties..  
+- [x] Types of database languages  
+- [x] ACID properties **(VVVVV IMP)**  
+- [x] Difference between vertical and horizontal scaling  
+- [x] What is sharding  
+- [x] Keys in DBMS  
+- [x] Types of relationship  
+- [x] Data abstraction in DBMS, three levels of it  
+- [x] Indexing in DBMS  
+- [x] What is DDL (Data Definition Language)  
+- [x] What is DML (Data Manipulation Language) 
+- [x] What is normalization ? Types of normalization. 
+- [x] What is denormalization ?  
+- [x] What is functional dependency ?  
+- [x] E-R Model ?   
+- [x] Conflict Serializability in DBMS ..  
+- [x] What is CCP ? (Concurrency Control Protocols)  
+- [x] Entity, Entity Type, Entity Set, Weak Entity Set..  
+- [x] What are SQL commands ? Types of them..  
+- [x] Nested Queries in SQL ?  
+- [x] What is JOIN .. Explain types of JOINs  Inner and Outer Join  
+- [x] Diff between 2 tier and 3 tier architecture  
+- [x] Diff between TRUNCATE and DELETE command ..  
+- [x] Difference between Intension and Extension in a Data Base 
+- [x] Difference between share lock and exclusive lock, definition of lock
 
 ## Networking
 

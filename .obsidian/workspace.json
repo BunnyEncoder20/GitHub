@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Most Important Interview Core Questions.md",
+                "file": "Interview Tips.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Most Important Interview Core Questions.md"
+                "file": "Interview Tips.md"
               }
             }
           },
@@ -97,7 +97,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Most Important Interview Core Questions.md",
+                "file": "Interview Tips.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -120,7 +120,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.6316046762907496,
+                  "scale": 2.4401481815699144,
                   "close": true
                 }
               }
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Most Important Interview Core Questions.md",
+                "file": "Interview Tips.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Most Important Interview Core Questions.md",
+                "file": "Interview Tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,8 +208,9 @@
   },
   "active": "83338db4ed10410b",
   "lastOpenFiles": [
-    "DBMS/07 SQL/Most Important Interview Core Questions.md",
+    "README.md",
     "Most Important Interview Core Questions.md",
+    "DBMS/07 SQL/Most Important Interview Core Questions.md",
     "DBMS/07 SQL/SQL.md",
     "Assets/Pasted image 20240722130919.png",
     "Assets/Pasted image 20240722125706.png",
@@ -246,7 +247,6 @@
     "DBMS/04 DBMS Architectures/3-Tier Architecture.md",
     "DBMS/04 DBMS Architectures/Physical Schema.md",
     "DBMS/04 DBMS Architectures/00 Pre-requisites for DBMS Architectures.md",
-    "DBMS/04 DBMS Architectures/Database Schema.md",
     "Excalidraw/TimeLine 3 months.excalidraw",
     "DBMS/04 DBMS Architectures",
     "Excalidraw",
