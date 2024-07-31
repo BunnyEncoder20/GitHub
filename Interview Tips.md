@@ -19,9 +19,15 @@
 	1. I've skills that are required for a full stack developer
 	2. As these are are job requirements, I don't think these will be roadblocks
 	3. As already mentioned, I've  a fast learner and am used to learning skills for the job on the go which is what a startup thrives on. 
-4. **Why do you want to join the company ?** 
+4. **Why do you want to join the company ? (small scale start up)** 
 	1. What the company does, what you do and how they align together 
 	2. Interest, Passion, past exp
+	3. I am enthusiastic about the opportunity to work in an early-stage startup because it offers a unique environment for accelerated learning and professional growth. Here are the key reasons:
+		1. **Learning from Experienced Professionals**: Working closely with seasoned entrepreneurs and experts in a startup setting provides invaluable learning experiences. The proximity to experienced professionals allows for direct mentorship and insights that are often less accessible in larger, more hierarchical organizations.
+		2. **Hands-on Experience**: Startups provide the chance to engage in a variety of tasks and projects, allowing for a broad and deep understanding of different aspects of the business. This hands-on experience is crucial for building practical skills and gaining a comprehensive understanding of the industry.    
+		3. **Dynamic and Challenging Environment**: The fast-paced and ever-evolving nature of startups presents numerous challenges, which I view as opportunities for growth. Navigating through these challenges fosters resilience, adaptability, and creative problem-solving abilities, which are essential traits for professional development.
+		4. **Impact and Contribution**: In a startup, every team member's contribution significantly impacts the company's trajectory. The opportunity to make meaningful contributions and see the direct results of my work is highly motivating and fulfilling.
+		5. **Innovation and Creativity**: Startups are often at the forefront of innovation, experimenting with new ideas and approaches. Being part of such an environment encourages creativity and the pursuit of novel solutions, which aligns with my passion for continuous improvement and technological advancement.
 5. **Why do you think you are a good fit for the role?**
 	1. Professional things 
 	2. Strengths 
